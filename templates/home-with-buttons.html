@@ -3,8 +3,8 @@
 <html>
 <head>
 	<title>Home</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
-	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+	<link rel="stylesheet" type="text/css" href="../static//styles.css"> 
+	<!-- <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}"> -->
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Orbitron&display=swap" rel="stylesheet">
 	<style> 
 	h1{font-family: 'Orbitron', sans-serif;}
@@ -20,7 +20,7 @@
 	<div class="title-label"> Welcome. </div>
 	<header>
 		<div class="container">
-		<h1>TEXT GENERATION WITH GPT2</h1>
+		<h1>Choose A Model to Get Started</h1>
 		
 	</div>
 	</header>
@@ -28,21 +28,12 @@
 	<div class="container">
 
 		<form action="{{ url_for('generate')}}" method="POST">
-		<!-- <input type="text" name="comment"/> -->
-		<textarea name="message" rows="10" cols="75">Enter a prompt here to get started</textarea>
-		<br/>
 
-		<input type="submit" class="btn-info" value="Generate Text">
+        <input type="submit" class="btn-choice" value="Generate Text">
+        <input type="submit" class="btn-choice" value="Generate Text">
+        <input type="submit" class="btn-choice" value="Generate Text">
+        <input type="submit" class="btn-choice" value="Generate Text">
 	</form>
-	<p><i class="arrow down"></i></p> 
-	<p><i class="arrow down"></i></p> 
-	<p><i class="arrow down"></i></p> 
-	</div>
-	<div class="results">
-		<h2> Output: </h2>
-		<h2>" {{ generatedText }} " </h2>
-		<h3>- Your robot overlords.</h3>
-	
 	</div>
 </body>
 </html>

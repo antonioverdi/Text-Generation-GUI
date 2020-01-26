@@ -33,7 +33,7 @@ p {
 	margin-left: 10px;
 	margin-right: 10px;
 	color: #8e8d8a;
-  }
+}
 
 
 .title-label {
@@ -103,6 +103,20 @@ header{
 	color: #e85a4f;
 }
 
+.btn-choice {
+	background-color: #eae7dc;
+	color: #8e8d8a;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	height:80px;
+	width:500px;
+	font-size: 30px;
+	border: none;
+} /* Blue */
+.btn-choice:hover {
+	color: #e85a4f;
+}
+
 textarea {
 	background-color: #eae7dc;
 	border: none;
@@ -115,7 +129,7 @@ i {
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 5px
-  }
+}
 
 .down {
 	transform: rotate(45deg);
