@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="../static//styles.css"> 
+	<link rel="stylesheet" type="text/css" href="../static/styles/styles.css"> 
 	<!-- <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}"> -->
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Orbitron&display=swap" rel="stylesheet">
 	<style> 
@@ -29,10 +29,12 @@
 
 		<form action="{{ url_for('generate')}}" method="POST">
 
-        <input type="submit" class="btn-choice" value="Generate Text">
-        <input type="submit" class="btn-choice" value="Generate Text">
-        <input type="submit" class="btn-choice" value="Generate Text">
-        <input type="submit" class="btn-choice" value="Generate Text">
+		<input type="submit" class="btn-choice" formaction="/gpt_home.html" value="GPT">
+		<input type="submit" class="btn-choice" formaction="/gpt2_home.html" value="GPT2">
+		<input type="submit" class="btn-choice" formaction="/ctrl_home.html" value="CTRL">
+		<input type="submit" class="btn-choice" formaction="/xlnet_home.html" value="XLNET">
+		<input type="submit" class="btn-choice" formaction="/transfoxl_home.html" value="TRANSFO-XL">
+		<input type="submit" class="btn-choice" formaction="/xlm_home.html" value="XLM">
 	</form>
 	</div>
 </body>

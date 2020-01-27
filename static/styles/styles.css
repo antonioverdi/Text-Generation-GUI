@@ -35,6 +35,12 @@ p {
 	color: #8e8d8a;
 }
 
+.form-control{
+	background-color: #eae7dc;
+	color: #e85a4f;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 
 .title-label {
     margin: 20px 20px 20px 20px;
